@@ -16,6 +16,9 @@
  *      ---------------------------------------
  *      1.0         11-02-20    Final Submission
  *      
+ *      
+ *      Big O Notation: O(log n)
+ *      
  */
 
 using static System.Console;
@@ -27,7 +30,7 @@ namespace Carson_RecursiveFactorial
         static void Main(string[] args)
         {
             long result;
-            int count = 0;
+            long count = 0;
             int j = 1;
             string userInput;
 
@@ -44,12 +47,12 @@ namespace Carson_RecursiveFactorial
 
 
 
-        public static long Recursion(int s)
+        public static long Recursion(long s)
         {
             if (s <= 1) return 1;
             else
             {
-                return s * Recursion(s -1);
+                return s * Recursion(s - 1);
             }
         }
     }
